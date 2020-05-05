@@ -1,0 +1,1 @@
+export { default } from 'ember-scroll-spy/components/nav-item';
