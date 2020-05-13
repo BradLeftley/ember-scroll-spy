@@ -34,7 +34,7 @@ In this current version `0.0.2` you have two components an `nav-item` and an `se
 The id `about` will now be tracked and if it is found in the viewport the corresponding `nav-item` with the same `linkId` will be given an active class in which you can style from.
 
 ```
-<NavItem class="nav-link" @href="#about" @linkId="about" @name="About" \>
+<NavItem class="nav-link" href="#about" @linkId="about" @name="About" \>
 ```
 Note: Section item will also give the `tagName` section. 
 
