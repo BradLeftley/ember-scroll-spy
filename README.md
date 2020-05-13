@@ -38,9 +38,9 @@ The id `about` will now be tracked and if it is found in the viewport the corres
 ```
 Note: Section item will also give the `tagName` section. 
 
-If the section corresponding with the linkId is found then the `active` will be given. You can also add the `name` arguement to pass through a value to the Nav Link.
+If the section corresponding with the `linkId` is found then the `active` will be given. You can also add the `name` arguement to pass through a value to the `nav-item`.
 
-In future versions I hope to have both of these components very basic so you are not limited to navigation links and sections.
+In future versions I hope to have both of these components very basic so you are not limited to navigation items and sections.
 
 
 Contributing
