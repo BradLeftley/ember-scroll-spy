@@ -1,11 +1,13 @@
+/* eslint-disable no-debugger */
 import Component from '@ember/component';
 import { inject as service } from "@ember/service";
-
+import layout from '../templates/components/nav-item';
 export default Component.extend({
     viewportHandler: service('viewport-handler'),
     tagName: 'a',
     attributeBindings: ['href'],
     classNameBindings: ['active'],
+    layout,
     
     init(){
         this._super(...arguments);
