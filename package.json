@@ -1,13 +1,13 @@
 {
   "name": "ember-scroll-spy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/BradLeftley/ember-scroll-spy",
   "license": "MIT",
-  "author": "",
+  "author": "Bradley Leftley",
   "directories": {
     "doc": "doc",
     "test": "tests"
