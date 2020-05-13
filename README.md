@@ -26,9 +26,9 @@ Usage
 In this current version `0.0.2` you have two components an `nav-item` and an `section-item`. 
 ```
 <SectionItem class="resume-section about" id="about">
-<div>
-<h2>some content</h2>
-</div>
+  <div>
+    <h2>some content</h2>
+  </div>
 </SectionItem>
 ```
 The id `about` will now be tracked and if it is found in the viewport the corresponding `nav-item` with the same `linkId` will be given an active class in which you can style from.
