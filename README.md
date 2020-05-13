@@ -23,7 +23,24 @@ ember install ember-scroll-spy
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+In this current version `0.0.2` you have two components an `nav-item` and an `section-item`. 
+```
+<SectionItem class="resume-section about" id="about">
+<div>
+<h2>some content</h2>
+</div>
+</SectionItem>
+```
+The id `about` will now be tracked and if it is found in the viewport the corresponding `nav-item` with the same `linkId` will be given an active class in which you can style from.
+
+```
+<NavItem class="nav-link" @href="#about" @linkId="about" @name="About" \>
+```
+Note: Section item will also give the `tagName` section. 
+
+If the section corresponding with the linkId is found then the `active` will be given. You can also add the `name` arguement to pass through a value to the Nav Link.
+
+In future versions I hope to have both of these components very basic so you are not limited to navigation links and sections.
 
 
 Contributing
