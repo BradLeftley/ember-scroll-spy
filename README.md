@@ -31,7 +31,7 @@ In this current version `0.0.4` you have two components an `scroll-container` an
   </a>
 </ScrollContainer>
 ```
-The id `about` will now be tracked and if it is found in the viewport the corresponding `scroll-container` with the same `id` the `scroll-container` will be given an active class in which you can style from.
+The id `about` will now be tracked and if it is found in the viewport the corresponding `scroll-container` with the same `id` it will be given an active class in which you can style from.
 
 ```
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
