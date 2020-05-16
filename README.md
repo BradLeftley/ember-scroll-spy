@@ -1,7 +1,7 @@
 ember-scroll-spy
 ==============================================================================
 
-Ember scroll spy allows you to easily replicate bootstrap's scroll spy functionality. Based on a section item being in the viewport the nav-link with the corresponding Id will be updated with an active class.
+Ember scroll spy allows you to easily replicate bootstrap's scroll spy functionality. Based on the anchor being in the viewport the scroll-container with the corresponding Id will be updated with an active class.
 
 Simply pass through the the id to each component and the addon does the rest.
 
