@@ -1,16 +1,23 @@
-/* eslint-disable no-debugger */
 import Component from '@ember/component';
+/* eslint-disable no-debugger */
 import { inject as service } from "@ember/service";
 import scroller from '../mixins/scroller';
 import viewport from '../utils/viewport';
-import layout from '../templates/components/section-item';
+import layout from '../templates/components/anchor';
+
 
 export default Component.extend( scroller, {
-    tagName: "section",
+    tagName: "div",
     viewportHandler: service('viewport-handler'),
     inViewport: service('inViewport'),
     layout,
 
+    didRender: function(){
+      this.viewportHandler.updateViewPortActivity(
+        this.viewport.find(this.id),
+        this.id
+      );
+    },
     didInsertElement: function() {
       if (!this.viewport) {
         this.set('viewport', viewport.create());
@@ -21,10 +28,9 @@ export default Component.extend( scroller, {
       this.unbindScrolling();
     },
     scrolled: function() {
-      this.viewportHandler.updateViewPortActivity(
+       this.viewportHandler.updateViewPortActivity(
         this.viewport.find(this.id),
         this.id
       );
-        // this.viewportHandler.updateViewPortActivity(true, this.id);
     }
 });

@@ -1,11 +1,12 @@
 /* eslint-disable no-debugger */
 import Component from '@ember/component';
 import { inject as service } from "@ember/service";
-import layout from '../templates/components/nav-item';
+import layout from '../templates/components/scroll-container';
+
 export default Component.extend({
     viewportHandler: service('viewport-handler'),
-    tagName: 'a',
-    attributeBindings: ['href'],
+    tagName: 'span',
+    // attributeBindings: ['href'],
     classNameBindings: ['active'],
     layout,
     
