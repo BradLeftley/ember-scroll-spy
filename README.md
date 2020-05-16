@@ -25,21 +25,21 @@ Usage
 
 In this current version `0.0.4` you have two components an `scroll-container` and an `anchor`. 
 ```
-  <ScrollContainer @linkId="about">
-    <a class="nav-link js-scroll-trigger" href="#about">
-       About
-    </a>
-  </ScrollContainer>
+<ScrollContainer @linkId="about">
+  <a class="nav-link js-scroll-trigger" href="#about">
+     About
+  </a>
+</ScrollContainer>
 ```
 The id `about` will now be tracked and if it is found in the viewport the corresponding `scroll-container` with the same `id` the `scroll-container` will be given an active class in which you can style from.
 
 ```
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
-    <Anchor @id="about" />
-      <div>
-        <p> Some content </p>
-      </div>
-  <section>
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
+  <Anchor @id="about" />
+    <div>
+     <p>Some content</p>
+    </div>
+<section>
 ```
 Simply embed the `anchor` into your section, divs or any template and begin adding scroll spy to your apps. 
 
