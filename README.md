@@ -23,25 +23,25 @@ ember install ember-scroll-spy
 Usage
 ------------------------------------------------------------------------------
 
-In this current version `0.0.2` you have two components an `nav-item` and an `section-item`. 
+In this current version `0.0.4` you have two components an `scroll-container` and an `anchor`. 
 ```
-<SectionItem class="resume-section about" id="about">
-  <div>
-    <h2>some content</h2>
-  </div>
-</SectionItem>
+  <ScrollContainer @linkId="about">
+    <a class="nav-link js-scroll-trigger" href="#about">
+       About
+    </a>
+  </ScrollContainer>
 ```
-The id `about` will now be tracked and if it is found in the viewport the corresponding `nav-item` with the same `linkId` will be given an active class in which you can style from.
+The id `about` will now be tracked and if it is found in the viewport the corresponding `scroll-container` with the same `id` the `scroll-container` will be given an active class in which you can style from.
 
 ```
-<NavItem class="nav-link" href="#about" @linkId="about" @name="About" \>
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
+    <Anchor @id="about" />
+      <div>
+        <p> Some content </p>
+      </div>
+  <section>
 ```
-Note: Section item will also give the `tagName` section. 
-
-If the section corresponding with the `linkId` is found then the `active` will be given. You can also add the `name` arguement to pass through a value to the `nav-item`.
-
-In future versions I hope to have both of these components very basic so you are not limited to navigation items and sections.
-
+Simply embed the `anchor` into your section, divs or any template and begin adding scroll spy to your apps. 
 
 Contributing
 ------------------------------------------------------------------------------
