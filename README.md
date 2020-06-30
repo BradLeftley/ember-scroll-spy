@@ -43,10 +43,6 @@ The id `about` will now be tracked and if it is found in the viewport the corres
 ```
 Simply embed the `anchor` into your section, divs or any template and begin adding scroll spy to your apps. 
 
-Please install `ember-in-viewport` into your application so we can find the ids.
-
-(Will add this as a package to the addon)
-
 
 Contributing
 ------------------------------------------------------------------------------
