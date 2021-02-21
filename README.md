@@ -23,7 +23,7 @@ ember install ember-scroll-spy
 Usage
 ------------------------------------------------------------------------------
 
-In this current version `0.0.5` you have two components an `scroll-container` and an `anchor`. 
+In this current version `0.0.6` you have two components an `scroll-container` and an `anchor`. 
 ```
 <ScrollContainer @linkId="about">
   <a class="nav-link js-scroll-trigger" href="#about">
