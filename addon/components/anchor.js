@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-/* eslint-disable no-debugger */
 import { inject as service } from "@ember/service";
 import scroller from '../mixins/scroller';
 import viewport from '../utils/viewport';
