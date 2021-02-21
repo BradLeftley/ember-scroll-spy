@@ -8,8 +8,9 @@ Simply pass through the the id to each component and the addon does the rest.
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v2.18 or above
+* Ember.js v3.16 or above
 * Ember CLI v2.13 or above
+* Node.js v10 or above
 
 
 Installation

@@ -9,7 +9,7 @@ module('Integration | Component | scroll-container', function(hooks) {
   skip('it renders', async function(assert) {
     await render(hbs`{{scroll-container}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.dom(this.element).hasText('');
 
     // Template block usage:
     await render(hbs`
@@ -18,6 +18,6 @@ module('Integration | Component | scroll-container', function(hooks) {
       {{/scroll-container}}
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom(this.element).hasText('template block text');
   });
 });
