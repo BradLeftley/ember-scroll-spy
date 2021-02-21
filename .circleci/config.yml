@@ -1,0 +1,17 @@
+# .circleci/config.yml
+version: 2
+jobs:
+  build:
+    docker:
+      - image: danlynn/ember-cli:3.4.3-node_10.11
+        environment:
+          JOBS: 2
+    working_directory: ~/cv-website
+    steps:
+      - checkout
+      - run:
+          name: npm install
+          command: npm install --non-interactive
+      - run:
+          name: test
+          command: ember test
