@@ -12,6 +12,6 @@ jobs:
       - run:
           name: npm install
           command: npm install --non-interactive
-      - test:
+      - run:
           name: test
           command: ember test
