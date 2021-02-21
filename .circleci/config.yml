@@ -1,10 +1,17 @@
+# .circleci/config.yml
 version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:7.10-browsers
+      - image: danlynn/ember-cli:3.4.3-node_10.11
         environment:
-          CHROME_BIN: "/usr/bin/google-chrome"
+          JOBS: 2
+    working_directory: ~/cv-website
     steps:
       - checkout
-      - run: npm install
+      - run:
+          name: npm install
+          command: npm install --non-interactive
+      - test:
+          name: test
+          command: ember test
