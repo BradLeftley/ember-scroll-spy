@@ -18,13 +18,13 @@ export default Component.extend({
     //Check if in viewport then set
     this.set('active', this.viewportHandler.current === linkId);
 
-    this.addObserver(`viewportHandler.current`, this, this.setViewportHandler);
+    this.addObserver('viewportHandler.current', this, this.setViewportHandler);
   },
 
   willDestroy() {
     this._super();
     this.removeObserver(
-      `viewportHandler.${this.linkId}`,
+      'viewportHandler.current',
       this,
       this.setViewportHandler
     );
